@@ -113,6 +113,8 @@
                     android:layout_height="wrap_content"
                     android:textColor="#ffffff"
                     android:maxLines="1"
+                    android:lines="1"
+                    android:inputType="text"
                     android:backgroundTint="@color/white"
                     android:textCursorDrawable="@drawable/cursor"/>
             </LinearLayout>
@@ -150,6 +152,8 @@
                     android:layout_height="wrap_content"
                     android:textColor="#ffffff"
                     android:maxLines="1"
+                    android:lines="1"
+                    android:inputType="text"
                     android:backgroundTint="@color/white"
                     android:textCursorDrawable="@drawable/cursor"/>
             </LinearLayout>
