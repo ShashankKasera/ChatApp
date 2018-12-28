@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.Login" />
-        <activity android:name=".ui.Register"></activity>
+        <activity android:name=".ui.Register" />
+        <activity android:name=".ui.NavigationDrawer"></activity>
     </application>
 
 </manifest>
