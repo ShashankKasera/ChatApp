@@ -153,7 +153,7 @@
                     android:textColor="#ffffff"
                     android:maxLines="1"
                     android:lines="1"
-                    android:inputType="text"
+                    android:inputType="textPassword"
                     android:backgroundTint="@color/white"
                     android:textCursorDrawable="@drawable/cursor"/>
             </LinearLayout>

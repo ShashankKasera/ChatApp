@@ -5,13 +5,20 @@
         android:icon="@drawable/home"
         android:title="Home">
     </item>
-    <item android:id="@+id/MyAccount"
+
+    <item android:id="@+id/AllUser"
         android:icon="@drawable/account"
-        android:title="Account">
+        android:title="All User">
     </item>
+
     <item android:id="@+id/Setting"
         android:icon="@drawable/settinh"
-        android:title="Setting">
+        android:title="Account Setting">
+    </item>
+
+    <item android:id="@+id/Logout"
+        android:icon="@drawable/settinh"
+        android:title="Log out">
     </item>
 
 </menu>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfaileActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#b3ff0000">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2 "
+            android:gravity="center"
+            android:layout_marginTop="70dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/userimage" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight=".5"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/name_profaile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user name"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/status_profaile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi taere i'm using Chat App"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/total_friend_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Friends"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <Button
+                android:id="@+id/friend_request_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sende Freiend request"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_button"/>
+
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/friend_request_decline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Decline Freiend request"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_button"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

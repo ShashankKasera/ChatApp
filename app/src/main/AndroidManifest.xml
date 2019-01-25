@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.root.myapp">
 
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +17,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".firebaseDatabaseex.Lottie"></activity>
+        <activity android:name=".ui.ChatActivity" />
+        <activity android:name=".ui.ProfaileActivity" />
+        <activity android:name=".ui.AllUserActivity" />
+        <activity android:name=".ui.UpdateProfile" />
+        <activity android:name=".ui.SettingActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,8 +31,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.Login" />
+        <activity android:name=".ui.Dashboard" />
+        <activity android:name=".firebaseDatabaseex.Insertsinglekeyvalue" />
+        <activity android:name=".firebaseDatabaseex.Update" />
+        <activity android:name=".ui.StartActivity" />
         <activity android:name=".ui.Register" />
-        <activity android:name=".ui.NavigationDrawer"></activity>
+
     </application>
 
 </manifest>

@@ -183,7 +183,7 @@
                     android:backgroundTint="@color/white"
                     android:maxLines="1"
                     android:lines="1"
-                    android:inputType="text"
+                    android:inputType="textPassword"
                     android:textCursorDrawable="@drawable/cursor"/>
             </LinearLayout>
 

@@ -1,17 +1,24 @@
 package com.example.root.myapp.ui;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieDrawable;
+import com.example.root.myapp.MainActivity;
 import com.example.root.myapp.R;
+import com.example.root.myapp.common.CommonUtils;
+import com.example.root.myapp.common.Loader;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -24,14 +31,20 @@ public class Login extends AppCompatActivity {
     private EditText UserPasswordEdt;
     private TextView textViewRegister;
     private FirebaseAuth auth;
-
+    private Loader loader;
     private String Email;
     private  String UserPassword;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
+
+
+        loader = new Loader(this);
 
         EmailEdt = findViewById(R.id.email);
         Login = findViewById(R.id.login);
@@ -54,6 +67,7 @@ public class Login extends AppCompatActivity {
                     Toast.makeText(Login.this, "Enter Corect Password", Toast.LENGTH_SHORT).show();
                 }
                 else {
+                    loader.show();
                     login();
                 }
 
@@ -64,6 +78,8 @@ public class Login extends AppCompatActivity {
         textViewRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                loader.show();
                 startActivity(new Intent(Login.this,Register.class));
                 finish();
             }
@@ -80,8 +96,12 @@ public class Login extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Log.d("nmfdvfd", "onComplete: "+"Successfull");
                             Toast.makeText(com.example.root.myapp.ui.Login.this, "Successfull", Toast.LENGTH_SHORT).show();
+                            loader.dismiss();
+                            startActivity(new Intent(Login.this,MainActivity.class));
+                            finish();
                         }
                         else {
+                            loader.dismiss();
                             Log.d("nmfdvfd", "onComplete: "+"User not found");
                             Toast.makeText(com.example.root.myapp.ui.Login.this, "User not found", Toast.LENGTH_SHORT).show();
                         }
