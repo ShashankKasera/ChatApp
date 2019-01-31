@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ProfaileActivity">
+    tools:context=".ui.activity.ProfaileActivity">
 
 
     <ImageView
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#b3ff0000">
+        android:background="#c4ff0101">
 
 
         <LinearLayout
@@ -47,11 +47,11 @@
                 android:id="@+id/name_profaile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="user name"
                 android:layout_weight="1"
+                android:fontFamily="@font/aver"
+                android:textStyle="bold"
                 android:textColor="@color/white"
-                android:textSize="25dp"
-                android:textStyle="bold"/>
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/status_profaile"
@@ -60,9 +60,10 @@
                 android:text="Hi taere i'm using Chat App"
                 android:textColor="@color/white"
                 android:textSize="16dp"
+                android:fontFamily="@font/aver"
+                android:textStyle="bold"
                 android:layout_weight="2"
-                android:layout_gravity="center"
-                android:textStyle="bold"/>
+                android:layout_gravity="center"/>
 
         </LinearLayout>
 
@@ -79,6 +80,7 @@
                 android:text="Total Friends"
                 android:textColor="@color/white"
                 android:textStyle="bold"
+                android:fontFamily="@font/aver"
                 android:textSize="16dp"/>
 
         </LinearLayout>
@@ -97,6 +99,8 @@
                 android:layout_height="wrap_content"
                 android:text="Sende Freiend request"
                 android:textSize="16dp"
+                android:fontFamily="@font/aver"
+                android:textStyle="bold"
                 android:layout_weight="1"
                 android:textColor="@color/white"
                 android:background="@drawable/rounded_button"/>
@@ -110,6 +114,8 @@
                 android:text="Decline Freiend request"
                 android:textSize="16dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/aver"
+                android:textStyle="bold"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/white"
                 android:background="@drawable/rounded_button"/>

@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1072620794821:android:b95e41b47344b920",
+        "mobilesdk_app_id": "1:1072620794821:android:baea8db847282668",
         "android_client_info": {
-          "package_name": "com.example.root.myapp"
+          "package_name": "com.shashank.root.myapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1072620794821-qgc326o4bcp7fbp0dru7ccieltj2v82d.apps.googleusercontent.com",
+          "client_id": "1072620794821-4uurrir8118df013qi4orjtktq6jlitj.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.root.myapp",
+            "package_name": "com.shashank.root.myapp",
             "certificate_hash": "a3d7dfa3115557430aafb3957e72b131d804dadd"
           }
         },

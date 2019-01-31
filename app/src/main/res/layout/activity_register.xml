@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Register">
+    tools:context=".ui.activity.Register">
 
     <ImageView
         android:layout_width="match_parent"
@@ -20,12 +20,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:layout_margin="20dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="20sp"
+                android:layout_width="30sp"
                 android:layout_height="28sp"
                 android:src="@drawable/back" />
 
@@ -35,11 +36,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_weight="1"
-                android:fontFamily="@font/"
                 android:gravity="right"
                 android:text="Register"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
+                android:fontFamily="@font/aver"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -96,6 +97,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Name"
+                        android:fontFamily="@font/aver"
+                        android:textStyle="bold"
                         android:textColor="#ffffff"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -134,6 +137,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Email"
+                        android:fontFamily="@font/aver"
+                        android:textStyle="bold"
                         android:textColor="#ffffff"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -147,44 +152,6 @@
                     android:lines="1"
                     android:inputType="text"
                     android:backgroundTint="@color/white"
-                    android:textCursorDrawable="@drawable/cursor"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical"
-                android:layout_weight="1">
-
-                <LinearLayout
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="28dp"
-                        android:src="@drawable/password"
-                        android:layout_marginRight="15dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Password"
-                        android:textColor="#ffffff"
-                        android:textSize="18dp" />
-                </LinearLayout>
-
-                <EditText
-                    android:id="@+id/Password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#ffffff"
-                    android:backgroundTint="@color/white"
-                    android:maxLines="1"
-                    android:lines="1"
-                    android:inputType="text"
                     android:textCursorDrawable="@drawable/cursor"/>
             </LinearLayout>
 
@@ -213,6 +180,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Address"
+                        android:fontFamily="@font/aver"
+                        android:textStyle="bold"
                         android:textColor="#ffffff"
                         android:textSize="18dp" />
                 </LinearLayout>
@@ -232,13 +201,14 @@
             <LinearLayout
                 android:gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_marginBottom="30dp">
                 <ImageButton
                     android:id="@+id/signup"
                     android:layout_width="250dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:layout_margin="20dp"
                     android:layout_marginLeft="40dp"
                     android:layout_marginRight="40sp"
                     android:background="@drawable/rounded_button"
@@ -248,29 +218,7 @@
 
 
 
-            <LinearLayout
-                android:layout_margin="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Don have an account?"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"/>
-
-                <TextView
-                    android:id="@+id/login"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" Login"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-                    android:textSize="16dp"/>
-
-            </LinearLayout>
 
 
         </LinearLayout>

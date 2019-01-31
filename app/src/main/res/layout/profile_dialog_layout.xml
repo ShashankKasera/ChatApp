@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:elevation="200dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/profiledialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profilephoto"
+            android:scaleType="centerCrop"
+            android:src="@drawable/qazituckir"
+            android:layout_width="300dp"
+            android:layout_height="350dp" />
+
+        <ImageView
+            android:layout_alignRight="@+id/profilephoto"
+            android:id="@+id/imageCancel"
+            android:layout_margin="20dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+           android:src="@drawable/cancal"/>
+
+        <LinearLayout
+            android:background="#9C000000"
+            android:layout_alignBottom="@+id/profilephoto"
+            android:layout_width="300dp"
+            android:layout_height="70dp">
+
+
+
+            <TextView
+                android:id="@+id/profilephoto_name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/aver"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mayank Kasera"
+                android:textColor="@color/white"
+                android:textSize="30dp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

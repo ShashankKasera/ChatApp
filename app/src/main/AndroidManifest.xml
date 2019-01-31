@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.root.myapp">
-
+    package="com.shashank.root.myapp">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
-
-
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -16,26 +13,48 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".firebaseDatabaseex.Lottie"></activity>
-        <activity android:name=".ui.ChatActivity" />
-        <activity android:name=".ui.ProfaileActivity" />
-        <activity android:name=".ui.AllUserActivity" />
-        <activity android:name=".ui.UpdateProfile" />
-        <activity android:name=".ui.SettingActivity" />
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        android:name=".ui.activity.OfflineCapabilities">
+        <activity android:name="com.shashank.root.myapp.ui.activity.UpdateProfile" />
+        <activity android:name="com.shashank.root.myapp.ui.activity.VerificationCodeActivity" />
+        <activity android:name="com.shashank.root.myapp.ui.activity.LoginNumber" />
+        <activity android:name="com.shashank.root.myapp.ui.activity.ShowImageActivity" />
+        <activity android:name="com.shashank.root.myapp.firebaseDatabaseex.Lottie" />
+        <activity android:name="com.shashank.root.myapp.ui.activity.ChatActivity" />
+        <activity android:name="com.shashank.root.myapp.ui.activity.ProfaileActivity" />
+        <activity android:name="com.shashank.root.myapp.ui.activity.AllUserActivity" />
+        <activity android:name="com.shashank.root.myapp.ui.activity.SettingActivity" />
+        <activity android:name="com.shashank.root.myapp.ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.Login" />
-        <activity android:name=".ui.Dashboard" />
-        <activity android:name=".firebaseDatabaseex.Insertsinglekeyvalue" />
-        <activity android:name=".firebaseDatabaseex.Update" />
-        <activity android:name=".ui.StartActivity" />
-        <activity android:name=".ui.Register" />
+        <activity android:name="com.shashank.root.myapp.ui.Login" />
+        <activity android:name="com.shashank.root.myapp.ui.activity.Dashboard" />
+        <activity android:name="com.shashank.root.myapp.ui.activity.StartActivity" />
+        <activity android:name="com.shashank.root.myapp.ui.activity.Register" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
 
     </application>
 

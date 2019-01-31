@@ -13,11 +13,11 @@
 
     <item android:id="@+id/Setting"
         android:icon="@drawable/settinh"
-        android:title="Account Setting">
+        android:title="Profile Setting">
     </item>
 
     <item android:id="@+id/Logout"
-        android:icon="@drawable/settinh"
+        android:icon="@drawable/logout"
         android:title="Log out">
     </item>
 

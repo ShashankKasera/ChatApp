@@ -35,6 +35,8 @@
                     android:layout_height="wrap_content"
                     android:maxLines="1"
                     android:lines="1"
+                    android:fontFamily="@font/aver"
+                    android:textStyle="bold"
                     android:inputType="text"
                     android:text="shashankkasera08@gmail.com"
                     android:textColor="#ffffff" />
